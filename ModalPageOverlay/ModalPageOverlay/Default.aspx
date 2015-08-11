@@ -5,10 +5,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link href="StyleSheet1.css" rel="Stylesheet" type="text/css"/>
+    <link href="StyleSheet1.css" rel="Stylesheet" type="text/css" />
     <script src="Scripts/jquery-1.7.1.intellisense.js" type="text/javascript"></script>
-    <script src ="Scripts/jquery-1.7.1.js" type="text/javascript"></script>
-   
+    <script src="Scripts/jquery-1.7.1.js" type="text/javascript"></script>
+
 </head>
 <body>
 
@@ -21,16 +21,27 @@
     </script>
 
 
-        <div class="overlay invisible"></div>
-        <div class="modal invisible">I'm the modal window!</div>
-        <div>
-            I'm a page, hear me roar. <br />
+    <div class="overlay invisible"></div>
 
-           <%-- <asp:Button runat="server" Text="Turn on modal overlay" OnClick="Unnamed_Click" />--%>
-            <br />
+    <div class="modal invisible">
+       <%-- I'm the modal window!<br />--%>
+        <br />
+        <br />
+        <img src="Images/loading_circle.gif" />
+        <br /><br />
+        Loading please wait
+    </div>
 
-            <button onclick ="">Toggle Modal On</button>
-        </div>
+    <div>
+        I'm a page, hear me roar.
+        <br />
+
+
+        <%-- <asp:Button runat="server" Text="Turn on modal overlay" OnClick="Unnamed_Click" />--%>
+        <br />
+
+        <button onclick="">Toggle Modal On</button>
+    </div>
 
 </body>
 </html>
