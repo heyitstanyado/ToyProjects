@@ -28,3 +28,7 @@
     z-index: 11; /* 1px higher than the overlay layer */
 }
 
+.invisible {
+    position: absolute;
+    left: -9999px;
+}

@@ -13,5 +13,10 @@ namespace ModalPageOverlay
         {
 
         }
+
+        protected void Unnamed_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
