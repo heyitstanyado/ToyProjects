@@ -11,5 +11,32 @@ namespace ModalPageOverlay {
     
     
     public partial class _Default {
+        
+        /// <summary>
+        /// overlayDIV control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl overlayDIV;
+        
+        /// <summary>
+        /// modalDIV control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl modalDIV;
+        
+        /// <summary>
+        /// btnGetReport control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnGetReport;
     }
 }

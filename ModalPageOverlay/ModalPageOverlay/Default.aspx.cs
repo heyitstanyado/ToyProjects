@@ -16,7 +16,8 @@ namespace ModalPageOverlay
 
         protected void Unnamed_Click(object sender, EventArgs e)
         {
-
+            overlayDIV.Attributes["class"] = "overlay";
+            modalDIV.Attributes["class"] = "modal";
         }
     }
 }

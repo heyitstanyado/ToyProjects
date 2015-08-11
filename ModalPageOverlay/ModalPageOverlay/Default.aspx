@@ -6,41 +6,42 @@
 <head runat="server">
     <title></title>
     <link href="StyleSheet1.css" rel="Stylesheet" type="text/css" />
-    <script src="Scripts/jquery-1.7.1.intellisense.js" type="text/javascript"></script>
+<%--    <script src="Scripts/jquery-1.7.1.intellisense.js" type="text/javascript"></script>--%>
     <script src="Scripts/jquery-1.7.1.js" type="text/javascript"></script>
 
 </head>
 <body>
 
-    <script type="text/javascript">
+<%--    <script type="text/javascript">
         $(document).ready(function () {
-            $("button").click(function () {
+            $("#btnGetReport").click(function () {
                 $("div").removeClass("invisible");
             });
         });
-    </script>
+    </script>--%>
 
 
-    <div class="overlay invisible"></div>
+    <div id="overlayDIV" runat="server" class="overlay invisible"></div>
 
-    <div class="modal invisible">
-       <%-- I'm the modal window!<br />--%>
+    <div id="modalDIV" runat="server" class="modal invisible">
         <br />
         <br />
         <img src="Images/loading_circle.gif" />
-        <br /><br />
+        <br />
+        <br />
         Loading please wait
     </div>
 
     <div>
         I'm a page, hear me roar.
         <br />
-
-
-        <%-- <asp:Button runat="server" Text="Turn on modal overlay" OnClick="Unnamed_Click" />--%>
+        <%--         <asp:Button ID="btnGetReport" runat="server" ToolTip="Click to run report" Text="Get Report" OnClick="btnGetReport_Click" />--%>
+        <form runat="server">
+            <asp:Button ID="btnGetReport" runat="server" Text="Turn on modal overlay" OnClick="Unnamed_Click" />
+        </form>
         <br />
 
-        <button onclick="">Toggle Modal On</button>
+ <%--       <button id="test">Toggle Modal On</button>--%>
     </div>
 
 </body>
