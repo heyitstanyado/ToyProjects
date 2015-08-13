@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace ModalPageOverlay
+namespace AjaxHelloWorld
 {
     public partial class _Default : System.Web.UI.Page
     {
@@ -14,10 +14,9 @@ namespace ModalPageOverlay
 
         }
 
-        protected void Unnamed_Click(object sender, EventArgs e)
+        protected void btnHelloWorld_Click(object sender, EventArgs e)
         {
-            //overlayDIV.Attributes["class"] = "overlay";
-            //modalDIV.Attributes["class"] = "modal";
+            lblHelloWorld.Text = "Hello, world - this is a new message. The time is now: " + DateTime.Now.ToLongTimeString();
         }
     }
 }

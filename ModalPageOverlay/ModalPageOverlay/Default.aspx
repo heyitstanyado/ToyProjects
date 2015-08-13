@@ -6,19 +6,32 @@
 <head runat="server">
     <title></title>
     <link href="StyleSheet1.css" rel="Stylesheet" type="text/css" />
-<%--    <script src="Scripts/jquery-1.7.1.intellisense.js" type="text/javascript"></script>--%>
+
     <script src="Scripts/jquery-1.7.1.js" type="text/javascript"></script>
 
 </head>
 <body>
 
-<%--    <script type="text/javascript">
+    <script type="text/javascript">
         $(document).ready(function () {
-            $("#btnGetReport").click(function () {
+
+
+            //$("#test").click(function () {
+            //    $("div").removeClass("invisible");
+            //});
+
+            function showOverlay() {
                 $("div").removeClass("invisible");
-            });
+            }
+
+            //$("#test").click(showOverlay);
+
         });
-    </script>--%>
+
+        function showOverlay() {
+            $("div").removeClass("invisible");
+        };
+    </script>
 
 
     <div id="overlayDIV" runat="server" class="overlay invisible"></div>
@@ -37,11 +50,11 @@
         <br />
         <%--         <asp:Button ID="btnGetReport" runat="server" ToolTip="Click to run report" Text="Get Report" OnClick="btnGetReport_Click" />--%>
         <form runat="server">
-            <asp:Button ID="btnGetReport" runat="server" Text="Turn on modal overlay" OnClick="Unnamed_Click" />
+            <asp:Button ID="btnGetReport" runat="server" Text="Turn on modal overlay" OnClientClick="showOverlay()" OnClick="Unnamed_Click" />
         </form>
         <br />
 
- <%--       <button id="test">Toggle Modal On</button>--%>
+     <%--   <button id="test" onclick="showOverlay()">Toggle Modal On</button>--%>
     </div>
 
 </body>
