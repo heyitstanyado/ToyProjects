@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{87E864B6-D749-4687-96FB-C5AD732C1457}</ProjectGuid>
+    <ProjectGuid>{BABCC7F2-D1D6-4264-BA71-B9C35A331AEF}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AjaxHelloWorld</RootNamespace>
-    <AssemblyName>AjaxHelloWorld</AssemblyName>
+    <RootNamespace>HeartbeatSample</RootNamespace>
+    <AssemblyName>HeartbeatSample</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -54,10 +54,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="ImStillAlive.aspx" />
     <Content Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
-    <Content Include="UpdatePanelControl.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -68,19 +68,23 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UpdatePanelControl.aspx.cs">
-      <DependentUpon>UpdatePanelControl.aspx</DependentUpon>
+    <Compile Include="ImStillAlive.aspx.cs">
+      <DependentUpon>ImStillAlive.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UpdatePanelControl.aspx.designer.cs">
-      <DependentUpon>UpdatePanelControl.aspx</DependentUpon>
+    <Compile Include="ImStillAlive.aspx.designer.cs">
+      <DependentUpon>ImStillAlive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionHeartbeat.ashx.cs">
+      <DependentUpon>SessionHeartbeat.ashx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="SessionHeartbeat.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -103,7 +107,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:6458/</IISUrl>
+          <IISUrl>http://localhost:19732/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
