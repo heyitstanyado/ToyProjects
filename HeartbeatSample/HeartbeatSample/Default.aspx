@@ -14,18 +14,18 @@
 
 
         function setHeartbeat() {
-            //alert("SetHeartbeat() got called");
-            setTimeout(heartbeat, 3000); // every 5 min
+      
+            setTimeout(heartbeat, 3000); //3 sec
         }
 
         function heartbeat() {
-            //alert("this is a heartbeat...");
+          
             $.get(
                 "/ImStillAlive.aspx",
                 null,
                 function (data) {
                     alert(data);
-                    $(".heartbeat").show().fadeOut(1000); // just a little "red flash" in the corner :)
+   
                     setHeartbeat();
                 }
             );
@@ -35,7 +35,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        Testing
+
         <div class="heartbeat">&hearts;</div>
 
         <div>
