@@ -9,20 +9,25 @@
     <script>
         $(document).ready(function() {        
             setHeartbeat();
+            var textName = $("#txtName").val();
+            var labelTest = $("#lblTest").text();
+            alert(labelTest);
+
         });
 
 
 
         function setHeartbeat() {
       
-            setTimeout(heartbeat, 3000); //3 sec
+            setTimeout("heartbeat()", 5000); //5 sec
         }
 
         function heartbeat() {
           
             $.get(
                 "/ImStillAlive.aspx",
-                null,
+                { name: "Tanya"
+                },
                 function (data) {
                     alert(data);
    
@@ -36,9 +41,14 @@
 <body>
     <form id="form1" runat="server">
 
-        <div class="heartbeat">&hearts;</div>
+            
 
         <div>
+            An alert should popup every 5 seconds. 
+            <br />
+            <asp:TextBox runat="server" ID="txtName" Text="Jane Doe"></asp:TextBox>
+            <br />
+            <asp:Label runat="server" ID="lblTest" Text="I'm a label"></asp:Label>
         </div>
     </form>
 </body>

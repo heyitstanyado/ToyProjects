@@ -11,7 +11,10 @@ namespace HeartbeatSample
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Response.Write("The time is " + DateTime.Now);
+            //Response.Write("The time is " + DateTime.Now);
+
+            string name = Request.QueryString["name"].ToString();
+            Response.Write("My name is: " + name);
         }
     }
 }
