@@ -9,10 +9,6 @@
     <script>
         $(document).ready(function() {        
             setHeartbeat();
-            var textName = $("#txtName").val();
-            var labelTest = $("#lblTest").text();
-            alert(labelTest);
-
         });
 
 
@@ -46,9 +42,7 @@
         <div>
             An alert should popup every 5 seconds. 
             <br />
-            <asp:TextBox runat="server" ID="txtName" Text="Jane Doe"></asp:TextBox>
-            <br />
-            <asp:Label runat="server" ID="lblTest" Text="I'm a label"></asp:Label>
+            
         </div>
     </form>
 </body>
